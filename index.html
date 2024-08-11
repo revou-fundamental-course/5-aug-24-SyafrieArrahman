@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator BMI</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,25 +17,37 @@
     <main>
         <aside>
             <article>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di BMI Kalkulator.</p>
             </article>
             <form>
-                <div>
+                <div class="gender-option">
                     <h3>Jenis Kelamin:</h3>
-                    <input type="radio" id="laki-laki" name="gender" value="laki-laki"><label for="laki-laki">Laki - Laki</label>
-                    <input type="radio" id="perempuan" name="gender" value="perempuan"><label for="perempuan">Perempuan</label>
+                    <label>
+                      <input type="radio" name="gender" value="laki-laki"><img src="/assets/IMG_0220.jpeg" alt="laki-laki">
+                      <div class="gender-text">
+                        Laki-laki
+                      </div>
+                    </label>
+                </div>
+                <div class="gender-option">
+                  <label>
+                    <input type="radio" name="gender" value="perempuan"><img src="/assets/IMG_0222.png" alt="perempuan">
+                    <div class="gender-text">
+                      perempuan
+                    </div>
+                  </label>
                 </div>
                 <div>
-                    <h3>Berat Badan</h3>
-                    <input type="number">
+                  <h3>Umur</h3>
+                  <input type="number">
+                  <h3>Tinggi Badan</h3>
+                  <input type="number">
+                  <h3>Berat Badan</h3>
+                  <input type="number">
                 </div>
                 <div>
-                    <h3>Tinggi Badan</h3>
-                    <input type="number">
-                </div>
-                <div>
-                    <button>Hitung BMI</button>
-                    <button>Reset</button>
+                  <button>Hitung BMI</button>
+                  <button>Reset</button>
                 </div>
             </form>
             <article>
