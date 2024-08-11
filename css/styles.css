@@ -42,7 +42,7 @@ aside {
   border-radius: 15px;
   padding: 35px;
   width: 50%;
-  background-color:#bc1010
+  background-color: #17bf87;
 }
 
 article, section{
@@ -123,6 +123,26 @@ input, textarea {
 
 .info-bmi {
   margin-top: 50px;
+}
+
+section h2 {
+  text-align: center;
+}
+
+.hasil-bmi {
+  margin: 25px;
+  padding: 25px;
+  border-radius: 14px;
+  background-color: #23e0a1;
+  text-align: center;
+}
+
+.saran-bmi {
+  margin: 25px;
+  padding: 25px;
+  border-radius: 14px;
+  background-color: #23e0a1;
+  text-align: center;
 }
 
 footer p {
