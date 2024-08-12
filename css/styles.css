@@ -1,7 +1,15 @@
+:root {
+  --primary: #271771;
+  --secondary: #5f3393;
+  --thirdary: #a442ad;
+  --field: #f8f8f8;
+  --accent: #e11f50;
+}
+
 body {
   margin: 0;
-  background: #123f64;
-  color: #f8f8f8;
+  background: var(--primary);
+  color: var(--field);
   font-family: "montserrat";
 }
 
@@ -25,24 +33,20 @@ main {
   margin-left: 50px;
   margin-right: 50px;
   display: flex;
-  background-color: #17bf87;
-}
-
-aside {
-  width: 50%;
+  background-color: var(--secondary);
 }
 
 .aside-main {
+  width: 70%;
   padding: 2rem;
   padding-right: 3rem;
 }
 
 .aside-hasil {
-  outline: 15px solid #123f64;
+  outline: 15px solid var(--primary);
   border-radius: 15px;
   padding: 35px;
   width: 50%;
-  background-color: #17bf87;
 }
 
 article, section{
@@ -69,7 +73,7 @@ form {
 }
 
 .gender-option input[type="radio"]:checked + img {
-  border: 1px solid #1c517c;
+  filter: brightness(50%);
 }
 
 .input-data input {
@@ -81,27 +85,35 @@ form {
   font-size: 14px;
 }
 
-input, textarea {
-  color: #17bf87;
+.input-data input:focus {
+  outline: none;
 }
 
-.button-hitung {
+
+input, textarea {
+  color: var(--secondary);
+}
+
+.btn-hitung {
   border: none;
+  height: 50px;
   width: 100px;
   color: #f8f8f8;
-  background-color: #0cc0df;
+  background-color: #31d305;
   border-radius: 25px;
   padding: 10px;
   margin-top: 35px;
 }
 
-.button-hitung:hover {
+.btn-hitung:hover {
   color: #f8f8f8;
-  background-color: #0ca5c0;
+  background-color: #2aa608;
+  cursor: pointer;
 }
 
-.button-reset {
+.btn-reset {
   border: none;
+  height: 50px;
   width: 100px;
   color: #f8f8f8;
   background-color: #df0c0c;
@@ -110,9 +122,10 @@ input, textarea {
   margin-left: 15px;
 }
 
-.button-reset:hover {
+.btn-reset:hover {
   color: #f8f8f8;
   background-color: #bc1010;
+  cursor: pointer;
 }
 
 .gender-option {
@@ -133,16 +146,51 @@ section h2 {
   margin: 25px;
   padding: 25px;
   border-radius: 14px;
-  background-color: #23e0a1;
+  background-color: var(--thirdary);
   text-align: center;
+}
+
+.nilai-bmi {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.kategori-bmi {
+  margin: 10px;
+}
+
+.output-bmi {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .saran-bmi {
   margin: 25px;
   padding: 25px;
   border-radius: 14px;
-  background-color: #23e0a1;
+  background-color: var(--thirdary);
   text-align: center;
+}
+
+.btn-konsul {
+  width: 250px;
+  height: 50px;
+  margin-left: 25px;
+  border-radius: 25px;
+  background-color: var(--accent);
+  color: var(--field);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.reminder {
+  margin: 75% 35px 35px;
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center;
+  background-color: var(--thirdary);
 }
 
 footer p {
