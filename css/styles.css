@@ -38,7 +38,7 @@ main {
 
 .aside-main {
   width: 70%;
-  padding: 2rem;
+  padding: 2rem 3rem;
   padding-right: 3rem;
 }
 
@@ -53,8 +53,10 @@ article, section{
   text-align: justify;
 }
 
-form {
-  
+.gender-option {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
 }
 
 .gender-option img {
@@ -62,6 +64,7 @@ form {
   height: 75px;
   border-radius: 50%;
   cursor: pointer;
+  transition: filter 0.3s;
 }
 
 .gender-text {
@@ -76,12 +79,17 @@ form {
   filter: brightness(50%);
 }
 
+.input-data {
+  margin-top: 10px;
+}
+
 .input-data input {
   width: 95%;
   height: 10px;
   border: none;
   border-radius: 25px;
   padding: 15px;
+  margin-top: 10px;
   font-size: 14px;
 }
 
@@ -89,105 +97,52 @@ form {
   outline: none;
 }
 
-
 input, textarea {
   color: var(--secondary);
 }
 
-.btn-hitung {
+.btn-hitung, .btn-reset {
   border: none;
   height: 50px;
   width: 100px;
   color: #f8f8f8;
-  background-color: #31d305;
   border-radius: 25px;
   padding: 10px;
   margin-top: 35px;
+  cursor: pointer;
+}
+
+.btn-hitung {
+  background-color: #31d305;
 }
 
 .btn-hitung:hover {
-  color: #f8f8f8;
   background-color: #2aa608;
-  cursor: pointer;
 }
 
 .btn-reset {
-  border: none;
-  height: 50px;
-  width: 100px;
-  color: #f8f8f8;
   background-color: #df0c0c;
-  border-radius: 25px;
-  padding: 10px;
-  margin-left: 15px;
 }
 
 .btn-reset:hover {
-  color: #f8f8f8;
   background-color: #bc1010;
-  cursor: pointer;
-}
-
-.gender-option {
-  display: inline-block;
-  text-align: center;
-  margin: 10px;
 }
 
 .info-bmi {
   margin-top: 50px;
 }
 
-section h2 {
+#hasil {
   text-align: center;
-}
-
-.hasil-bmi {
-  margin: 25px;
-  padding: 25px;
-  border-radius: 14px;
-  background-color: var(--thirdary);
-  text-align: center;
-}
-
-.nilai-bmi {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.kategori-bmi {
-  margin: 10px;
-}
-
-.output-bmi {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.saran-bmi {
-  margin: 25px;
-  padding: 25px;
-  border-radius: 14px;
-  background-color: var(--thirdary);
-  text-align: center;
-}
-
-.btn-konsul {
-  width: 250px;
-  height: 50px;
-  margin-left: 25px;
   border-radius: 25px;
-  background-color: var(--accent);
-  color: var(--field);
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
+  padding: 1.5rem;
+  background-color: var(--thirdary);
+  margin: 0px 35px 50px 35px;
 }
 
 .reminder {
-  margin: 75% 35px 35px;
-  padding: 20px;
+  margin: 0 35px 35px;
+  padding: 1.5rem;
   border-radius: 25px;
   text-align: center;
   background-color: var(--thirdary);

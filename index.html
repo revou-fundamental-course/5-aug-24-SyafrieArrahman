@@ -19,35 +19,33 @@
             <article>
                 <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di BMI Kalkulator.</p>
             </article>
-            <form>
-                <div class="gender-option">
-                    <h3>Jenis Kelamin:</h3>
-                    <label>
-                      <input type="radio" name="gender" value="laki-laki"><img src="asset/male_boy_person_people_avatar_icon_159358.png" alt="laki-laki">
-                      <div class="gender-text">
-                        Laki-laki
-                      </div>
-                    </label>
-                </div>
-                <div class="gender-option">
-                  <label>
-                    <input type="radio" name="gender" value="perempuan"><img src="asset/female_woman_person_people_avatar_icon_159366.png" alt="perempuan">
-                    <div class="gender-text">
-                      perempuan
-                    </div>
-                  </label>
+            <form id="bmi-form">
+              <div class="gender-option">
+                <h3>Jenis Kelamin:</h3>
+                <label>
+                  <input type="radio" name="gender" value="laki-laki" id="gender-male"><img src="asset/male_boy_person_people_avatar_icon_159358.png" alt="laki-laki">
+                </label>
+              </div>
+              <div class="gender-option">
+                <label>
+                  <input type="radio" name="gender" value="perempuan" id="gender-female"><img src="asset/female_woman_person_people_avatar_icon_159366.png" alt="perempuan">
+                </label>
+              </div>
+                <div class="input-data">
+                  <label for="age">Umur</label>
+                  <input type="number" id="age">
                 </div>
                 <div class="input-data">
-                  <h3>Umur</h3>
-                  <input type="number">
-                  <h3>Tinggi Badan (cm)</h3>
-                  <input type="number">
-                  <h3>Berat Badan (kg)</h3>
-                  <input type="number">
+                  <label for="tb">Tinggi Badan (cm)</label>
+                  <input type="number" id="tb">
+                </div>
+                <div class="input-data">
+                  <label for="bb">Berat Badan (kg)</label>
+                  <input type="number" id="bb">
                 </div>
                 <div class="button-input">
-                  <button class="btn-hitung">Hitung BMI</button>
-                  <button class="btn-reset">Reset</button>
+                  <button type="button" class="btn-hitung" onclick="hitungBMI()">Hitung BMI</button>
+                  <button type="button" class="btn-reset" onclick="resetForm()">&#10227 Reset</button>
                 </div>
             </form>
             <article class="info-bmi">
@@ -67,29 +65,18 @@
         </aside>
         <aside class="aside-hasil">
             <section>
-                <h2>Hasil</h2>
-                <form class="hasil-bmi">
-                  <div class="nilai-bmi">
-                    29.7
-                  </div>
-                  <div class="kategori-bmi">
-                    Anda Dalam Kategori
-                  </div>
-                  <div class="output-bmi">
-                    Kegemukan
-                  </div>
-                </form>
-                <h2>Saran</h2>
-                <form class="saran-bmi">
-                  <div>
-                    Perbanyak olahraga dan mengatur pola makan. Jangan lupa untuk konsultasi ke ahli gizi agar mendapat saran yang tepat.
-                  </div>
-                </form>
-                <button class="btn-konsul">Konsultasi Sekarang</button>
-                <article class="reminder">
-                  <h3>Reminder</h3>
-                  <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
-                </article>
+              <div id="hasil">
+                <h2 class="hasil-title">Hasil</h2>
+                <p id="hasilBMI"></p>
+                <p>Anda dalam kategori</p>
+                <p id="kategoriBMI"></p>
+                <h2 class="saran-title">Saran</h2>
+                <p id="saran"></p>
+              </div>  
+              <article class="reminder">
+                <h3>Reminder</h3>
+                <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
+              </article>
             </section>
         </aside>
     </main>
@@ -99,6 +86,6 @@
         <p>made by syafriearrahman | reference halodoc.com</p>
       </article>
     </footer>
-    
+    <script src="js/scripts.js"></script>
 </body>
 </html>
