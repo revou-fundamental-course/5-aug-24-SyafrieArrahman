@@ -13,21 +13,21 @@ function hitungBMI() {
 
         if (bmi < 18.5) {
             kategoriBMI = "Kekurangan Berat Badan";
-            saran = "BMI Anda kurang dari 18.5. Anda berada dalam kategori kekurangan berat badan. Pertimbangkan untuk meningkatkan asupan nutrisi dan konsultasikan dengan dokter atau ahli gizi.";
+            desc = "BMI Anda kurang dari 18.5. Anda berada dalam kategori kekurangan berat badan. Pertimbangkan untuk meningkatkan asupan nutrisi dan konsultasikan dengan dokter atau ahli gizi.";
         } else if (bmi >= 18.5 && bmi <= 24.9) {
             kategoriBMI = "Normal (ideal)";
-            saran = "BMI Anda antara 18.5 - 24.9. Berat badan Anda berada dalam kategori normal. Pertahankan pola makan sehat dan olahraga teratur.";
+            desc = "BMI Anda antara 18.5 - 24.9. Berat badan Anda berada dalam kategori normal. Pertahankan pola makan sehat dan olahraga teratur.";
         } else if (bmi >= 25.0 && bmi <= 29.9) {
-            kategoriBMI = "Kegemukan";
-            saran = "BMI Anda antara 25.0 - 29.9. Anda berada dalam kategori kegemukan. Pertimbangkan untuk meningkatkan aktivitas fisik dan mengatur pola makan.";
+            kategoriBMI = "Kelebihan Berat Badan";
+            desc = "BMI Anda antara 25.0 - 29.9. Anda berada dalam kategori kelebihan berat badan. Pertimbangkan untuk meningkatkan aktivitas fisik dan mengatur pola makan.";
         } else {
-            kategoriBMI = "Kegemukan Parah";
-            saran = "BMI Anda di atas 30.0. Anda berada dalam kategori kegemukan parah. Disarankan untuk berkonsultasi dengan ahli gizi atau dokter.";
+            kategoriBMI = "Kegemukan (obesitas)";
+            desc = "BMI Anda di atas 30.0. Anda berada dalam kategori kegemukan. Disarankan untuk berkonsultasi dengan ahli gizi atau dokter.";
         }
 
         document.getElementById('hasilBMI').textContent = hasilBMI;
         document.getElementById('kategoriBMI').textContent = kategoriBMI;
-        document.getElementById('saran').textContent = saran;
+        document.getElementById('desc').textContent = desc;
         document.getElementById('hasil').style.display = 'block';
     } else {
         alert("Mohon lengkapi semua data!");
@@ -39,5 +39,5 @@ function resetForm() {
     document.getElementById('hasil').style.display = 'none';
     document.getElementById('hasilBMI').textContent = '';
     document.getElementById('kategoriBMI').textContent = '';
-    document.getElementById('saran').textContent = '';
+    document.getElementById('desc').textContent = '';
 }
