@@ -1,16 +1,16 @@
 :root {
-  --primary: #271771;
-  --secondary: #5f3393;
-  --thirdary: #a442ad;
-  --field: #f8f8f8;
-  --accent: #e11f50;
+  --primary: #4793AF;
+  --secondary: #FFC470;
+  --thirdary: #f8f8f8;
+  --field: #8B322C;
+  --accent: #DD5746;
 }
 
 body {
   margin: 0;
   background: var(--primary);
   color: var(--field);
-  font-family: "montserrat";
+  font-family: "poppins";
 }
 
 .main-title {
@@ -19,6 +19,7 @@ body {
   left: 0;
   width: 100%;
   text-align: center;
+  color: var(--thirdary);
 }
 
 .main-title h1 {
@@ -83,6 +84,10 @@ article, section{
   margin-top: 10px;
 }
 
+.input-data label {
+  font-weight: bold;
+}
+
 .input-data input {
   width: 95%;
   height: 10px;
@@ -98,7 +103,8 @@ article, section{
 }
 
 input, textarea {
-  color: var(--secondary);
+  font-weight: bold;
+  color: var(--field);
 }
 
 .btn-hitung, .btn-reset {
