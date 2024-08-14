@@ -124,6 +124,9 @@ input, textarea {
   display: flex;
   justify-content: space-between;
   margin-top: 35px;
+}
+
+.button-input button {
   cursor: pointer;
   color: #f8f8f8;
   border: none;
