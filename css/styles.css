@@ -184,7 +184,7 @@ input, textarea {
         align-items: center;
     }
 
-    .aside-hasil, .aside-main {
+    aside {
         width: 100%;
         margin-bottom: 20px;
     }
