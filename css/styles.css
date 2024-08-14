@@ -180,7 +180,7 @@ input, textarea {
         align-items: center;
     }
 
-    aside {
+    .aside-hasil, .aside-main {
         width: 100%;
         margin-bottom: 20px;
     }
