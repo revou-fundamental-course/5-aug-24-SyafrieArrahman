@@ -35,9 +35,13 @@ main {
   display: flex;
 }
 
+aside {
+  width: 50%;
+}
+
 .aside-hasil, .aside-main {
   padding: 2rem ;
-  width: 50%;
+  
 }
 
 .aside-hasil {
